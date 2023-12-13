@@ -31,7 +31,7 @@ def all_products(request):
 
 def home(request):
    
-    return render(request,'home.html')
+    return render(request,'index.html')
 
 
 def list(request):
@@ -60,7 +60,7 @@ def edit(request,pk):
 
 def del_cnf(request,pk):
     instance_dl=Scube_ss.objects.get(pk=pk)
-    if request.method == 'POST' :
+    if request.method== 'POST' :
         instance_dl.delete()
         return redirect('list')
 
