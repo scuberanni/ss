@@ -31,7 +31,7 @@ def all_products(request):
 
 def home(request):
    
-    return render(request,'home.html')
+    return render(request,'index.html')
 
 
 def list(request):
